@@ -1,0 +1,55 @@
+1. What is Python?
+
+Python is a high-level, interpreted, object-oriented, and easy-to-learn programming language.
+
+Features
+Easy syntax
+Free and open source
+Platform independent
+Object-Oriented
+Python First Program
+
+The first program in Python is traditionally the "Hello, World!" program. It is used to learn the basic syntax of Python and verify that Python is installed correctly.
+program :
+print("Hello, World!")
+output : Hello, World!
+1. Module in Python
+Definition
+
+A module is a Python file (.py) that contains functions, variables, or classes which can be reused in other Python programs.
+
+Example:
+
+Create a file named calculator.py
+EX:
+def add(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+2.PIP in python
+Definition
+
+pip stands for Preferred Installer Program (commonly referred to as the Python package installer). It is used to install, update, and remove external Python packages.
+
+Example packages:
+
+NumPy
+Pandas
+Matplotlib
+Django
+Flask
+3. Comments in Python
+Definition
+
+Comments are notes in the code that Python ignores during execution. They help explain the code and make it easier to understand.
+
+Single-Line Comment
+
+Use #.
+
+# This is a comment
+print("Hello World")
+
+Output
+Hello World
