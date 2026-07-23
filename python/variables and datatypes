@@ -1,0 +1,113 @@
+Variables in Python
+Definition
+
+A variable is a name used to store data (a value) in memory. You can use the variable later in your program.
+
+Syntax
+
+variable_name = value
+  Example
+
+name = "Ujjawal"
+age = 21
+height = 5.9
+
+print(name)
+print(age)
+print(height)
+
+Output
+
+Ujjawal
+21
+5.9
+  Rules for Naming Variables
+
+ Variable names can contain:
+
+Letters (A-Z, a-z)
+Numbers (0-9)
+Underscore (_)
+    Data Types in Python
+
+A data type specifies the kind of value stored in a variable.
+
+1. Integer (int)
+
+Stores whole numbers.
+
+age = 20
+marks = 95
+
+print(age)
+print(type(age))
+
+Output
+
+20
+<class 'int'>
+2. Float (float)
+
+Stores decimal numbers.
+
+price = 99.99
+
+print(price)
+print(type(price))
+
+Output
+
+99.99
+<class 'float'>
+  3. String (str)
+
+Stores text.
+
+name = "Ujjawal"
+
+print(name)
+print(type(name))
+
+Output
+
+Ujjawal
+<class 'str'>
+  4. Boolean (bool)
+
+Stores either True or False.
+
+is_student = True
+
+print(is_student)
+print(type(is_student))
+
+Output
+
+True
+<class 'bool'>
+5. List (list)
+
+Stores multiple items. Lists are ordered and mutable (can be changed).
+
+fruits = ["Apple", "Banana", "Mango"]
+
+print(fruits)
+print(type(fruits))
+
+Output
+
+['Apple', 'Banana', 'Mango']
+<class 'list'>
+  6. Tuple (tuple)
+
+Stores multiple items. Tuples are ordered and immutable (cannot be changed).
+
+colors = ("Red", "Blue", "Green")
+
+print(colors)
+print(type(colors))
+
+Output
+
+('Red', 'Blue', 'Green')
+<class 'tuple'>
