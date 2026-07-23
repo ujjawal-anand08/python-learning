@@ -1,0 +1,285 @@
+Sets in Python
+Definition
+
+A Set is an unordered, mutable collection of unique elements. It does not allow duplicate values.
+
+Syntax
+my_set = {1, 2, 3, 4}
+Example
+fruits = {"Apple", "Banana", "Mango"}
+
+print(fruits)
+
+Output (order may vary)
+
+{'Apple', 'Banana', 'Mango'}
+Characteristics of Sets
+✅ Unordered
+✅ Mutable (can add/remove items)
+✅ No duplicate values
+❌ No indexing or slicing
+Creating a Set
+numbers = {10, 20, 30}
+
+print(numbers)
+Empty Set
+s = set()
+
+print(type(s))
+
+Output
+
+<class 'set'>
+
+Note: {} creates an empty dictionary, not a set.
+
+Important Set Methods
+1. add()
+
+Adds one element.
+
+fruits = {"Apple", "Banana"}
+
+fruits.add("Mango")
+
+print(fruits)
+
+Output
+
+{'Apple', 'Banana', 'Mango'}
+2. update()
+
+Adds multiple elements.
+
+fruits = {"Apple"}
+
+fruits.update(["Banana", "Mango"])
+
+print(fruits)
+
+Output
+
+{'Apple', 'Banana', 'Mango'}
+3. remove()
+
+Removes an element.
+
+fruits = {"Apple", "Banana"}
+
+fruits.remove("Apple")
+
+print(fruits)
+
+Output
+
+{'Banana'}
+
+Raises KeyError if the item is not found.
+
+4. discard()
+
+Removes an element safely.
+
+fruits = {"Apple", "Banana"}
+
+fruits.discard("Orange")
+
+print(fruits)
+
+Output
+
+{'Apple', 'Banana'}
+
+No error if the item does not exist.
+
+5. pop()
+
+Removes a random element.
+
+fruits = {"Apple", "Banana", "Mango"}
+
+item = fruits.pop()
+
+print(item)
+print(fruits)
+6. clear()
+
+Removes all elements.
+
+fruits = {"Apple", "Banana"}
+
+fruits.clear()
+
+print(fruits)
+
+Output
+
+set()
+7. copy()
+
+Copies the set.
+
+a = {1, 2, 3}
+
+b = a.copy()
+
+print(b)
+8. union()
+
+Combines two sets.
+
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+print(A.union(B))
+
+Output
+
+{1, 2, 3, 4, 5}
+9. intersection()
+
+Returns common elements.
+
+A = {1, 2, 3}
+B = {2, 3, 4}
+
+print(A.intersection(B))
+
+Output
+
+{2, 3}
+Dictionary in Python
+Definition
+
+A Dictionary stores data in key-value pairs. Keys are unique and values can be of any data type.
+
+Syntax
+student = {
+    "name": "Ujjawal",
+    "age": 21,
+    "course": "B.Tech"
+}
+Characteristics :
+.Ordered 
+.Mutable
+.Keys are unique
+.Fast lookup using keys
+.Accessing Values
+student = {
+    "name": "Ujjawal",
+    "age": 21
+}
+
+print(student["name"])
+print(student["age"])
+
+Output
+
+Ujjawal
+21
+Important Dictionary Methods
+1. get()
+
+Returns the value of a key.
+
+student = {"name": "Ujjawal"}
+
+print(student.get("name"))
+
+Output
+
+Ujjawal
+2. keys()
+
+Returns all keys.
+
+student = {"name": "Ujjawal", "age": 21}
+
+print(student.keys())
+
+Output
+
+dict_keys(['name', 'age'])
+3. values()
+
+Returns all values.
+
+student = {"name": "Ujjawal", "age": 21}
+
+print(student.values())
+
+Output
+
+dict_values(['Ujjawal', 21])
+4. items()
+
+Returns key-value pairs.
+
+student = {"name": "Ujjawal", "age": 21}
+
+print(student.items())
+
+Output
+
+dict_items([('name', 'Ujjawal'), ('age', 21)])
+5. update()
+
+Updates or adds key-value pairs.
+
+student = {"name": "Ujjawal"}
+
+student.update({"age": 21})
+
+print(student)
+
+Output
+
+{'name': 'Ujjawal', 'age': 21}
+6. pop()
+
+Removes a specific key.
+
+student = {
+    "name": "Ujjawal",
+    "age": 21
+}
+
+student.pop("age")
+
+print(student)
+
+Output
+
+{'name': 'Ujjawal'}
+7. popitem()
+
+Removes the last inserted key-value pair.
+
+student = {
+    "name": "Ujjawal",
+    "age": 21
+}
+
+student.popitem()
+
+print(student)
+
+Output
+
+{'name': 'Ujjawal'}
+8. clear()
+
+Removes all items.
+
+student = {
+    "name": "Ujjawal",
+    "age": 21
+}
+
+student.clear()
+
+print(student)
+
+Output
+
+{}
