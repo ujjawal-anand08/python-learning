@@ -1,0 +1,274 @@
+#Python Control Statements :
+What are Control Statements?
+
+Control statements decide how a program executes. They control the flow of execution based on conditions or repetitions.
+
+There are 3 main types of control statements in Python:
+
+Decision Making Statements
+Looping Statements
+Loop Control Statements
+1. Decision Making Statements
+
+Decision-making statements execute different blocks of code depending on whether a condition is True or False.
+
+a) if Statement
+Syntax
+if condition:
+    statement
+Example
+age = 18
+
+if age >= 18:
+    print("You can vote.")
+Output
+You can vote.
+b) if-else Statement
+Syntax
+if condition:
+    statement1
+else:
+    statement2
+Example
+number = 7
+
+if number % 2 == 0:
+    print("Even Number")
+else:
+    print("Odd Number")
+Output
+Odd Number
+c) if-elif-else Statement
+
+Used when there are multiple conditions.
+
+Example
+marks = 78
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 60:
+    print("Grade C")
+else:
+    print("Fail")
+Output
+Grade B
+d) Nested if Statement
+
+An if statement inside another if statement.
+
+Example
+age = 20
+citizen = True
+
+if age >= 18:
+    if citizen:
+        print("Eligible to vote")
+Output
+Eligible to vote
+2. Looping Statements
+
+Loops execute a block of code repeatedly.
+
+There are two loops in Python:
+
+for loop
+while loop
+a) for Loop
+
+Used when the number of iterations is known.
+
+Syntax
+for variable in sequence:
+    statement
+Example
+for i in range(5):
+    print(i)
+Output
+0
+1
+2
+3
+4
+Example using a List
+fruits = ["Apple", "Banana", "Mango"]
+
+for fruit in fruits:
+    print(fruit)
+Output
+Apple
+Banana
+Mango
+range() Function
+
+range() generates a sequence of numbers.
+
+Example
+for i in range(1, 6):
+    print(i)
+
+Output
+
+1
+2
+3
+4
+5
+Example with Step
+for i in range(2, 11, 2):
+    print(i)
+
+Output
+
+2
+4
+6
+8
+10
+b) while Loop
+
+Executes until the condition becomes False.
+
+Syntax
+while condition:
+    statement
+Example
+count = 1
+
+while count <= 5:
+    print(count)
+    count += 1
+Output
+1
+2
+3
+4
+5
+Infinite Loop
+while True:
+    print("Hello")
+
+Note: This loop never ends unless interrupted (for example, by pressing Ctrl + C).
+
+3. Loop Control Statements
+
+Loop control statements change the normal execution of loops.
+
+They are:
+
+break
+continue
+pass
+a) break Statement
+
+Stops the loop immediately.
+
+Example
+for i in range(1, 11):
+    if i == 6:
+        break
+    print(i)
+Output
+1
+2
+3
+4
+5
+b) continue Statement
+
+Skips the current iteration and continues with the next one.
+
+Example
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)
+Output
+1
+2
+4
+5
+c) pass Statement
+
+pass is a placeholder. It does nothing but prevents syntax errors when a statement is required.
+
+Example
+for i in range(5):
+    if i == 2:
+        pass
+    print(i)
+Output
+0
+1
+2
+3
+4
+Difference Between break, continue, and pass
+Statement	Purpose	Effect
+break	Exit the loop	Loop stops immediately
+continue	Skip current iteration	Loop continues with the next iteration
+pass	Placeholder	Does nothing
+Nested Loops
+
+A loop inside another loop.
+
+Example
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(i, j)
+Output
+1 1
+1 2
+1 3
+2 1
+2 2
+2 3
+3 1
+3 2
+3 3
+Practical Examples
+Print Multiplication Table
+number = 5
+
+for i in range(1, 11):
+    print(f"{number} x {i} = {number * i}")
+Find Even Numbers
+for i in range(1, 21):
+    if i % 2 == 0:
+        print(i)
+Sum of Numbers
+total = 0
+
+for i in range(1, 6):
+    total += i
+
+print("Sum =", total)
+
+Output
+
+Sum = 15
+Guessing Loop
+password = ""
+
+while password != "python":
+    password = input("Enter Password: ")
+
+print("Access Granted")
+
+
+Q1. What are control statements?
+
+Control statements control the flow of execution of a program by making decisions or repeating code.
+
+Q2. Difference between for and while loop?
+for loop	while loop
+Used when the number of iterations is known	Used when the number of iterations is unknown
+Iterates over a sequence	Runs while a condition is True
+Q3. Difference between break and continue?
+break exits the loop immediately.
+continue skips the current iteration and moves to the next one.
+Q4. What is the purpose of pass?
+
+pass is a placeholder statement that performs no action. It is useful when you need to write syntactically valid code before implementing logic.
