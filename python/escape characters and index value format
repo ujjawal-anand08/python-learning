@@ -1,0 +1,137 @@
+#Escape Characters in Python 
+
+Escape characters are special characters that start with a backslash (\). They are used to represent characters that are difficult or impossible to type directly.
+Example 1: New Line (\n)
+print("Hello\nPython")
+
+Output
+
+Hello
+Python
+Example 2: Tab (\t)
+print("Name\tAge")
+print("Ujjawal\t21")
+
+Output
+
+Name    Age
+Ujjawal 21
+Example 3: Quotes
+print("He said \"Hello\"")
+print('It\'s raining')
+
+Output
+
+He said "Hello"
+It's raining
+Index Values in Python
+
+An index is the position of a character in a string (or an element in a list).
+
+Python uses zero-based indexing, which means counting starts from 0.
+
+Positive Index
+name = "Python"
+Character	P	y	t	h	o	n
+Index	0	1	2	3	4	5
+
+Example:
+
+name = "Python"
+
+print(name[0])
+print(name[3])
+print(name[5])
+
+Output
+
+P
+h
+n
+Negative Index
+
+Negative indexing starts from the end of the string.
+
+Character	P	y	t	h	o	n
+Negative Index	-6	-5	-4	-3	-2	-1
+
+Example:
+
+name = "Python"
+
+print(name[-1])
+print(name[-3])
+
+Output
+
+n
+h
+Indexing Example
+name = "Ujjawal"
+
+print(name[0])
+print(name[2])
+print(name[-1])
+
+Output
+
+U
+j
+l
+String Slicing
+
+Syntax:
+
+string[start : stop : step]
+start → Starting index (included)
+stop → Ending index (not included)
+step → Number of positions to move
+Example
+name = "Python"
+
+print(name[0:4])
+print(name[2:6])
+print(name[::2])
+print(name[::-1])
+
+Output
+
+Pyth
+thon
+Pto
+nohtyP
+Easy Way to Remember
+Escape Characters
+\n → N = New line
+\t → T = Tab
+\\ → Print \
+\" → Print ".
+\' → Print '
+Index Values
+String:   P   y   t   h   o   n
+Positive: 0   1   2   3   4   5
+Negative:-6 -5  -4  -3  -2  -1
+Quick Practice
+
+Predict the output:
+
+text = "Programming"
+
+print(text[0])
+print(text[-1])
+print(text[3:7])
+print(text[::2])
+print("Hello\nWorld")
+print("Python\tEasy")
+
+Answer
+
+P
+g
+gram
+Pormig
+Hello
+World
+Python  Easy
+
+These are the escape characters and indexing concepts you'll use frequently in Python programming.
