@@ -13,6 +13,8 @@ print(fruits)
 Output (order may vary)
 
 {'Apple', 'Banana', 'Mango'}
+
+
 Characteristics of Sets
 ✅ Unordered
 ✅ Mutable (can add/remove items)
