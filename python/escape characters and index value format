@@ -2,7 +2,7 @@
 
 Escape characters are special characters that start with a backslash (\). They are used to represent characters that are difficult or impossible to type directly.
 Example 1: New Line (\n)
-print("Hello\nPython")
+print("Hello\nPythoon")
 
 Output
 
