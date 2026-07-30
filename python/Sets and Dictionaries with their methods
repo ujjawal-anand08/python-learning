@@ -7,7 +7,7 @@ Syntax
 my_set = {1, 2, 3, 4}
 Example
 fruits = {"Apple", "Banana", "Mango"}
-
+ 
 print(fruits)
 
 Output (order may vary)
