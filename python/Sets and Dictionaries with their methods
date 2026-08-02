@@ -4,7 +4,7 @@ Definition
 A Set is an unordered, mutable collection of unique elements. It does not allow duplicate values.
 
 Syntax
-my_set = {1, 2, 3, 4}
+my_set = {1, 2, 3, 4}  
 Example
 fruits = {"Apple", "Banana", "Mango"}
  
