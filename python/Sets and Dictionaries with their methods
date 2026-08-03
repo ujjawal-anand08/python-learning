@@ -1,4 +1,4 @@
-Sets in Python
+Sets in Python:
 Definition
 
 A Set is an unordered, mutable collection of unique elements. It does not allow duplicate values.
