@@ -5,9 +5,9 @@ Control statements decide how a program executes. They control the flow of execu
 
 There are 3 main types of control statements in Python:  
 
-Decision Making Statements
-Looping Statements
-Loop Control Statements
+#Decision Making Statements
+#Looping Statements
+#Loop Control Statements
 1. Decision Making Statements
 
 Decision-making statements execute different blocks of code depending on whether a condition is True or False.
