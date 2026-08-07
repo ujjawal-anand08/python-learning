@@ -1,4 +1,4 @@
-. What is Python?
+. What is Python???
 
 Python is a high-level, interpreted, object-oriented, and easy-to-learn programming language.
 
@@ -13,7 +13,7 @@ Python First Program
 The first program in Python is traditionally the "Hello, World!" program. It is used to learn the basic syntax of Python and verify that Python is installed correctly.
 program :
 print("Hello, World!")
-output : Hello, World!
+##output : Hello, World!
 1. Module in Python
 Definition
 
